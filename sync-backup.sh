@@ -1,5 +1,5 @@
 #!/bin/bash
-## athor Koshuba V.O. - master@qbpro.ru
+## author Koshuba V.O. - master@qbpro.ru
 ## The script is copying files from the given extensions .. (weak version of the processor)
 #date
 rdate=`date +%d.%m.%y_%H:%M`
@@ -55,7 +55,7 @@ put_dir=( "/arhive/copy_share"
 	 "/arhive/copy_share"
 	 "/arhive/copy_share" );
 #------------------------------------------------
-
+echo `date +%d.%m.%y_%H:%M` "Begin syncing files on the server...">>$log
 # Copy the specified directory on the server and update Regulations
 # We will perform the cycle until the end of the array of names
 for ((i_names=0; i_names != ${#get_dir[@]}; i_names++))
